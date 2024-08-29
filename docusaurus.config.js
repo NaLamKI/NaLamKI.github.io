@@ -8,20 +8,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'NalamKI Docs',
+  tagline: 'NaLamKI Documentation',
+  favicon: 'img/Logo_NaLamKi.ico',
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: 'https://DrOwlington.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/NaLamKI-Docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Bonn-Consulting-UG', // Usually your GitHub org/user name.
-  projectName: 'NaLamKI-Docs', // Usually your repo name.
+  organizationName: 'DrOwlington', // Usually your GitHub org/user name.
+  projectName: 'DrOwlington.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
