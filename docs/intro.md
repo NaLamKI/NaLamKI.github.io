@@ -32,4 +32,4 @@ How is NaLamKI structured?
 
 ## Getting Started
 
-[See how you can get started with NaLamKI](./category/getting-started-1)
+[See how you can get started with NaLamKI](/docs/category/getting-started-1)
