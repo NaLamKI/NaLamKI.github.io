@@ -90,8 +90,8 @@ const config = {
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://nalamki.de/',
-            label: 'NaLamKI',
+            href: 'https://github.com/DrOwlington/DrOwlington.github.io',
+            label: 'GitHub Repo',
             position: 'right',
           },
         ],
