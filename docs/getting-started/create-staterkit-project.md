@@ -2,6 +2,14 @@
 This guide will help you set up and run the service locally. It also explains how to create a new custom Service.
 
 ### Prerequisites
+Clone the repository and navigate to the project folder:
+```sh
+git clone git@github.com:Bonn-Consulting-UG/NaLamKI-Example-Services.git
+cd NaLamKI-Example-Services
+```
+
+If you don't have access to the repository, please contact the [NaLamKI team](mailto:peter.kloke@hhi.fraunhofer.de). 
+If you encounter any issues, please refer to the GitHub documentation on [how to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 Download all necessary requirements via:
   ```sh

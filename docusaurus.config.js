@@ -33,6 +33,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
+    // locales: ['en', 'de'],
     locales: ['en'],
   },
 
@@ -82,6 +83,10 @@ const config = {
           src: 'img/Logo_NaLamKi.png',
         },
         items: [
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // }, 
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
