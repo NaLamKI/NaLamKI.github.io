@@ -8,20 +8,21 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'NalamKI Docs',
+  tagline: 'NaLamKI Documentation',
+  //favicon: 'img/favicon.ico',
+  favicon: 'img/Logo_NaLamKi.ico',
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: 'https://drowlington.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/NaLamKI-Docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Bonn-Consulting-UG', // Usually your GitHub org/user name.
-  projectName: 'NaLamKI-Docs', // Usually your repo name.
+  organizationName: 'DrOwlington', // Usually your GitHub org/user name.
+  projectName: 'drowlington.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -32,6 +33,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
+    // locales: ['en', 'de'],
     locales: ['en'],
   },
 
@@ -44,24 +46,24 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // blog: {
+          // showReadingTime: true,
+          // feedOptions: {
+          //   type: ['rss', 'atom'],
+          //   xslt: true,
+          // },
+          // // Please change this to your repo.
+          // // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // // Useful options to enforce blogging best practices
+          // onInlineTags: 'warn',
+          // onInlineAuthors: 'warn',
+          // onUntruncatedBlogPosts: 'warn',
+        //},
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -73,30 +75,34 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Logo_NaLamKi_text.png',
       navbar: {
-        title: 'My Site',
+        title: 'NaLamKI',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'NaLamKI Logo',
+          src: 'img/Logo_NaLamKi.png',
         },
         items: [
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // }, 
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/DrOwlington/DrOwlington.github.io',
+            label: 'GitHub Repo',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
@@ -108,19 +114,15 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Resources',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'SDK',
+                to: 'https://github.com/Bonn-Consulting-UG/NaLamKI-SDK',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Starter Kit',
+                href: 'https://github.com/Bonn-Consulting-UG/NaLamKI-Example-Services/blob/main/data_and_dashboard_template.md',
               },
             ],
           },
@@ -128,12 +130,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'NaLamKI',
+                href: 'https://nalamki.de/',
               },
             ],
           },

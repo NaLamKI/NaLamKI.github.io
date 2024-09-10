@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Projekt',
+    Svg: require('@site/static/img/ic_solar_notes.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        NaLamKI ist ein Forschungsprojekt bis Ende 2024, das KI-Dienste für die Landwirtschaft entwickelt. Es wertet Daten von Landmaschinen, Satelliten und Drohnen aus, integriert sie in einer Plattform und stellt Ergebnisse über ein Dashboard oder offene Schnittstellen bereit.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Mission',
+    Svg: require('@site/static/img/ic_analytics.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        NaLamKI stellt Landwirten maschinenunabhängige Dienste bereit, die Arbeitsabläufe erleichtern, Feldzustände analysieren, Erträge verbessern und Ressourcen einsparen.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Ziel',
+    Svg: require('@site/static/img/ic_tour.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Während der Forschungsphase können Landwirte sich kostenlos registrieren, um die Dienste auf ihren Feldern zu testen. Dienstanbieter können über ein Formular die Integration ihrer Services in die NaLamKI-Plattform beantragen.
       </>
     ),
   },
