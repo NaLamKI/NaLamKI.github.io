@@ -118,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'SDK',
-                to: 'https://github.com/Bonn-Consulting-UG/SDK',
+                to: 'https://github.com/NaLamKI/SDK',
               },
               {
                 label: 'Starter Kit',
