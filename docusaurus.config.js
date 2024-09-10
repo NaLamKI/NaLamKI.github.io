@@ -14,15 +14,15 @@ const config = {
   favicon: 'img/Logo_NaLamKi.ico',
 
   // Set the production url of your site here
-  url: 'https://drowlington.github.io',
+  url: 'https://nalamki.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'DrOwlington', // Usually your GitHub org/user name.
-  projectName: 'drowlington.github.io', // Usually your repo name.
+  organizationName: 'NaLamki', // Usually your GitHub org/user name.
+  projectName: 'nalamki.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -95,7 +95,7 @@ const config = {
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/DrOwlington/DrOwlington.github.io',
+            href: 'https://github.com/NaLamKI/nalamki.github.io',
             label: 'GitHub Repo',
             position: 'right',
           },
@@ -118,11 +118,11 @@ const config = {
             items: [
               {
                 label: 'SDK',
-                to: 'https://github.com/Bonn-Consulting-UG/NaLamKI-SDK',
+                to: 'https://github.com/Bonn-Consulting-UG/SDK',
               },
               {
                 label: 'Starter Kit',
-                href: 'https://github.com/Bonn-Consulting-UG/NaLamKI-Example-Services/blob/main/data_and_dashboard_template.md',
+                href: 'https://github.com/NaLamKI/Starterkit',
               },
             ],
           },
@@ -136,7 +136,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `NaLamKI Documentation Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
