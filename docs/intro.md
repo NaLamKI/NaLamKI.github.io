@@ -8,7 +8,7 @@ This webpage provides a detailed documentation of the open-source software devel
 
 We also include example services that are published in a tutorial-style format to help users get familiar with developing software services for the NaLamKI platform. These [step-by-step examples](./getting-started/starterkit.md) will guide users through the process of creating agricultural applications, such as crop monitoring, soil analysis, or irrigation management tools. By following these tutorials, users can learn best practices for integrating AI models, utilizing sensor data, and deploying cloud-based services tailored to agriculture. At this time a super simple service that processes an image, detects its green values and publishes its geodata can be found in these tutorials. We are working on publishing a fruit detection service as tutorial by autumn 2024.
 
-Additionally, the paper includes a theoretical overview of the platform's [architecture](./architecture/dashboard.md), offering insights into its structure and functionality. 
+Additionally, this documentation includes a theoretical overview of the platform's [architecture](./architecture/dashboard.md), offering insights into its structure and functionality. 
 
 Once the platform is released in a beta version, the documentation will be expanded to include instructions for [deploying services on the platform](./deployment/overview.md), allowing users to integrate their custom solutions seamlessly into the NaLamKI ecosystem.
 
