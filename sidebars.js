@@ -12,17 +12,20 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         'getting-started/starterkit',
+        'getting-started/data-structures',
         'getting-started/own-service',
       ],
     },
-    {
+    // excluded in current version, because we do not have enough 
+    // content aka are not far enough in publishing aspects of the architecture
+    /*{
       type: 'category',
       label: 'Architecture',
       items: [
       "architecture/dashboard",
       "architecture/data"
       ],
-    },
+    },*/
     {
       type: 'category',
       label: 'SDK',
