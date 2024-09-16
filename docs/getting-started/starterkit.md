@@ -41,6 +41,6 @@ all results are saved into `test/action/output`.
 
 Results can be visualized executing:
 ```sh
-python test/visualize_outputs.py
+python src/visualize_outputs.py
 ```
 
