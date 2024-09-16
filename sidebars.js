@@ -12,6 +12,7 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         'getting-started/starterkit',
+        'getting-started/data-structures',
         'getting-started/own-service',
       ],
     }, 

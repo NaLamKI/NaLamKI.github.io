@@ -1,4 +1,4 @@
-# Deploying services on the NaLamKI platform
+# Deploying services on the platform
 
 This documentation page is currently under development. Once the platform is published in its beta version, you will find the necessary tutorials for deploying your digital service here. In the meantime, you can follow the tutorials for [building a service](/docs/getting-started/starterkit.md) for the NaLamKI platform. 
 
