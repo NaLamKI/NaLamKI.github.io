@@ -14,7 +14,7 @@ Once the platform is released in a beta version, the documentation will be expan
 
 ## NaLamKI's Goal
 
-The NaLamKI project aims to make agricultural processes more efficient and sustainable through the use of cloud and AI technologies. To achieve this, a Gaia-X-compliant Software-as-a-Service platform is being developed, where agricultural sensor and machine data are collected. AI applications available on the platform assist farmers in analyzing the condition of crops and soil over large areas, thereby supporting processes such as irrigation, fertilization, and pest control.
+The NaLamKI project aims to make agricultural processes more efficient and sustainable through the use of cloud and AI technologies. To achieve this, a Software-as-a-Service platform is being developed, where agricultural sensor and machine data are collected. AI applications available on the platform assist farmers in analyzing the condition of crops and soil over large areas, thereby supporting processes such as irrigation, fertilization, and pest control.
 
 
 ## Use of NaLamKI for Agriculture
