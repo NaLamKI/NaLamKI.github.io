@@ -4,29 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Projekt',
+    title: 'The Project',
     Svg: require('@site/static/img/ic_solar_notes.svg').default,
     description: (
       <>
-        NaLamKI ist ein Forschungsprojekt bis Ende 2024, das KI-Dienste für die Landwirtschaft entwickelt. Es wertet Daten von Landmaschinen, Satelliten und Drohnen aus, integriert sie in einer Plattform und stellt Ergebnisse über ein Dashboard oder offene Schnittstellen bereit.
+        NaLamKI is a research project running until the end of 2024 from where it will expands into new areas with its work set to continue beyond 2024. It develops AI services for agriculture, analyzing data from agricultural machinery, satellites, and drones, integrating them into a platform, and providing results through a dashboard and open interfaces.
       </>
     ),
   },
   {
-    title: 'Mission',
+    title: 'Our Goal',
     Svg: require('@site/static/img/ic_analytics.svg').default,
     description: (
       <>
-        NaLamKI stellt Landwirten maschinenunabhängige Dienste bereit, die Arbeitsabläufe erleichtern, Feldzustände analysieren, Erträge verbessern und Ressourcen einsparen.
+        The NaLamKI project aims to improve agricultural processes through the use of cloud and AI technologies. To achieve this, a Gaia-X-compliant Software-as-a-Service platform is being developed collecting agricultural data. AI applications provided on the platform support farmers in analyzing the condition of plants and soil across large areas, aiding processes such as irrigation, fertilization, and pest control.
       </>
     ),
   },
   {
-    title: 'Ziel',
+    title: 'Your Use',
     Svg: require('@site/static/img/ic_tour.svg').default,
     description: (
       <>
-        Während der Forschungsphase können Landwirte sich kostenlos registrieren, um die Dienste auf ihren Feldern zu testen. Dienstanbieter können über ein Formular die Integration ihrer Services in die NaLamKI-Plattform beantragen.
+        NaLamKI will simplify and speed up crop monitoring on large agricultural areas. Remote data collection via drones or satellites, combined with AI-driven weather and crop development models, provides valuable insights into soil conditions. Farmers can detect issues with irrigation, fertilization, or pest infestations early, enabling faster responses. This targeted approach reduces the use of pesticides and fertilizers, leading to cost savings, lower environmental impact, and improved climate resilience.
       </>
     ),
   },
