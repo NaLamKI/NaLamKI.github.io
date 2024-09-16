@@ -14,7 +14,9 @@ const sidebars = {
         'getting-started/starterkit',
         'getting-started/own-service',
       ],
-    },
+    }, 
+    // TODO: insert again when needed
+    /*
     {
       type: 'category',
       label: 'Architecture',
@@ -23,6 +25,7 @@ const sidebars = {
       "architecture/data"
       ],
     },
+    */
     {
       type: 'category',
       label: 'SDK',

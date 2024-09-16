@@ -1,8 +1,8 @@
 # Build your own service
 
-***Note!*** *This is a first version of a documentation for building an own service for the Nalamki plattform. We are currently working on a revised and more detailed version of this tutorial, which will be published by the end of september or beginning of october.*
+***Note!*** *This is a first version of a documentation for building an own service for the Nalamki plattform. We are currently working on a revised and more detailed version of this tutorial, which will be published by october.*
 
-To implement your own Service, you have to create a class which inherits from `NaLamKIService` as follows:
+To implement your own service, you have to create a class which inherits from `NaLamKIService` as follows:
 ```python
 from sdk.service import NaLamKIService
 
@@ -64,11 +64,11 @@ For local testing the output directory is set to the folder `test/action/output`
 Note that you can save files of any format during the `process_data` method into `os.path.join(self.action_path, output)` independently of the self.save_data method. 
 
 
-To get started you can modify the code in `test/service.py`.
+To get started you can modify the code in `test/service.py` from our [starter kit](starterkit.md).
 
 ## Deployment of your service on the webpage
 
-The Nalamki developers are currently working towards a beta version of the plattform to be tested soon! With the Beta version, a tutorial on how to deploy your written service on the plattform will be published as well in our [Deployment Section](/docs/deployment/overview.md).
+The Nalamki developers are currently working towards a beta version of the platform to be tested soon! With the Beta version, a tutorial on how to deploy your written service on the plattform will be published as well in our [Deployment Section](/docs/deployment/overview.md).
 
 <!-- TODO-1:
 ### Deploy Docker Image

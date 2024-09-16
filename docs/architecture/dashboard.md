@@ -1,9 +1,9 @@
 # Dashboard
 The Dashboard Template describes the Sidebar in the Dashboard containing the visualization of the Dataset. The template translates the data into Plots, Images, ...
 
-You can create a different visualization for different [GEO JSON Features](###Geo-Data-Structure). Therefore you can define different Template Objects and select which `featureTypes` they are relevant for. Furthermore you can define which `title` and `description` the sidebar should show.
+You can create a different visualization for different [GEO JSON Features](/docs/getting-started/data-structures.md). Therefore you can define different Template Objects and select which `featureTypes` they are relevant for. Furthermore you can define which `title` and `description` the sidebar should show.
 
-The `widgets` describe the actual visualizations that will be displayed in the sidebar. There are different Widget visualizations you can select from [Widgets Overview](###-Widget-Overview).
+The `widgets` describe the actual visualizations that will be displayed in the sidebar. There are different Widget visualizations you can select from Widgets Overview in the next section.
 
 ```json 
 [
@@ -30,9 +30,9 @@ At the moment you can select between two Kategories of Visualizations with diffe
 - Images: `IMAGES`
 
 ### Anatomy of a Widget
-A Widget always need a `type`, which describes the concrete visualisation of the data. [Different Types](###-Widget-Overview). 
+A Widget always need a `type`, which describes the concrete visualisation of the data.  
 
-The most important information for the widget is the data attribute. This referes to the Dataset, the data for the visualization is loaded from. Conrete the Dataset Type you defined in the [Dataset](###Dataset-Datastructure). Sometimes you don't want to visualize all values (in one Diagram) therefore you must define the values that should be visualized in the diagramm. Again you have to use the same value types defined in the [Dataset](###Dataset-Datastructure).
+The most important information for the widget is the data attribute. This referes to the Dataset, the data for the visualization is loaded from. Conrete the Dataset Type you defined in the [Dataset](/docs/getting-started/data-structures.md). Sometimes you don't want to visualize all values (in one Diagram) therefore you must define the values that should be visualized in the diagramm. Again you have to use the same value types defined in the [Dataset](/docs/getting-started/data-structures.md).
 
 
 ```json 
