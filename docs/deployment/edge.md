@@ -1,7 +1,7 @@
 # Edge
 You can use any device connected to the internet and equipped with sufficient computational power to run your service on the NaLamKI platform.
 
-For this, you need to first setup the project according to the [Getting Started](/docs/category/getting-started-1) guide.
+For this, you need to first setup the project according to the [Getting Started](/docs/getting-started/starterkit.md) guide.
 Next, you need to build the Docker image:
 
 ```bash

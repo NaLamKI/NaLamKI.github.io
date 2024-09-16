@@ -1,38 +1,8 @@
-# Starter Kit
-This guide will help you set up and run the service locally. It also explains how to create a new custom Service.
+# Build your own service
 
-### Prerequisites
-Clone the repository and navigate to the project folder:
-```sh
-git clone git@github.com:Bonn-Consulting-UG/NaLamKI-Example-Services.git
-cd NaLamKI-Example-Services
-```
+***Note!*** *This is a first version of a documentation for building an own service for the Nalamki plattform. We are currently working on a revised and more detailed version of this tutorial, which will be published by the end of september or beginning of october.*
 
-If you don't have access to the repository, please contact the [NaLamKI team](mailto:peter.kloke@hhi.fraunhofer.de). 
-If you encounter any issues, please refer to the GitHub documentation on [how to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
-
-Download all necessary requirements via:
-  ```sh
-  pip install -r requirements.txt
-  ```
-### Test Example
-To run a minimal example, execute:
-```sh
-python test/test.py
-```
-This initializes a service defined in `test/service.py` and runs the service locally. 
-
-In this example a dummy model is used which detects green colors. The code demonstrates how the data is loaded, processed by the model and saved.
-The test data must be located in `test/action/input` and 
-all results are saved into `test/action/output`. 
-
-Results can be visualized executing:
-```sh
-python test/visualize_outputs.py
-```
-
-## Build your own service
-To implement you own Service, you have to create a class which inherits from `NaLamKIService` as follows:
+To implement your own Service, you have to create a class which inherits from `NaLamKIService` as follows:
 ```python
 from sdk.service import NaLamKIService
 
@@ -49,12 +19,12 @@ class ExampleService(NaLamKIService):
 ```
 Here two key methods need to be defined.
 
-### Initilizing the Model
+## Initializing the Model
 In the `init_model` method have to initialise and return your model. 
 The model can then be accessed via `self.model` anywhere in the class.
 <!-- Where to place model checkpoints? -->
 
-### Processing the Data
+## Processing the Data
 The `process_data` method is responsible for loading the input files, applying the model and saving the results.
 
 **Load Inputs:**\
@@ -96,8 +66,11 @@ Note that you can save files of any format during the `process_data` method into
 
 To get started you can modify the code in `test/service.py`.
 
+## Deployment of your service on the webpage
 
-<!-- TODO:
+The Nalamki developers are currently working towards a beta version of the plattform to be tested soon! With the Beta version, a tutorial on how to deploy your written service on the plattform will be published as well in our [Deployment Section](/docs/deployment/overview.md).
+
+<!-- TODO-1:
 ### Deploy Docker Image
 
 HHI registry: http://default-route-openshift-image-registry.apps.k8s.nt.ag/nalamki-hhi-common
@@ -158,4 +131,5 @@ Docker Desktop:
 
 [Ubuntu/Linux](https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169)
 -->
+
 
