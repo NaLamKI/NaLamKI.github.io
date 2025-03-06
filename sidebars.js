@@ -10,33 +10,49 @@ const sidebars = {
     {
       type: 'category',
       label: 'Getting Started',
+      link: { type: 'doc', id: 'getting-started/starterkit' }, // Set starterkit as the main page
       items: [
         'getting-started/starterkit',
         'getting-started/data-structures',
         'getting-started/own-service',
       ],
-    }, 
-    // TODO: insert again when needed
-    /*
+    },
     {
       type: 'category',
       label: 'Architecture',
+      link: { type: 'doc', id: 'architecture/overview' }, // Set overview as the main page
       items: [
-      "architecture/dashboard",
-      "architecture/data"
-      ],
+        'architecture/overview', 
+        'architecture/farmer_workflow', 
+        'architecture/results_monitor',
+        'architecture/dataflow', 
+        'architecture/semantics'
+        ],
     },
-    */
     {
       type: 'category',
       label: 'SDK',
-      items: ['sdk/overview'],
+      link: { type: 'doc', id: 'sdk/overview' }, // Set overview as the main page
+      items: [
+        'sdk/overview',
+        'sdk/nalamki-service',
+        'sdk/using-the-starterkit',
+        'sdk/dashboard-blueprint',
+        'sdk/data-model',
+      ],
     },
     {
       type: 'category',
       label: 'Deployment',
-      items: ['deployment/overview'],
-    }
+      link: { type: 'doc', id: 'deployment/overview' }, // Set overview as the main page
+      items: [
+        'deployment/overview',
+        'deployment/docker',
+        'deployment/kubernetes',
+        'deployment/edge'
+        ],
+    },
+    'faq'
   ],
 };
 

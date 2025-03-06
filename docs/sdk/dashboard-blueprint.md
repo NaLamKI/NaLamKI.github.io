@@ -1,5 +1,6 @@
-# Dashboard
-The Dashboard Template describes the Sidebar in the Dashboard containing the visualization of the Dataset. The template translates the data into Plots, Images, ...
+# Dashboard Blueprint
+
+The Dashboard Blueprint describes the Sidebar in the Dashboard containing the visualization of the Dataset. The template translates the data into Plots, Images, ...
 
 You can create a different visualization for different [GEO JSON Features](/docs/getting-started/data-structures.md). Therefore you can define different Template Objects and select which `featureTypes` they are relevant for. Furthermore you can define which `title` and `description` the sidebar should show.
 
@@ -85,4 +86,5 @@ A Dataset item can contain Images. To visualize those Images you can use the ima
     "bounding_boxes": true
 }
 ```
+
 

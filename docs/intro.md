@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-This webpage provides a detailed documentation of the open-source software developed as part of the NaLamKI project. At present, users will find a software development kit (SDK) that enables them to develop their own services for the platform, published [here](https://github.com/NaLamKI/SDK). The documentation for the SDK's is continously improved and extended. 
+This webpage provides a detailed documentation of the open-source software developed as part of the NaLamKI project. At present, users will find a software development kit (SDK) that enables them to develop their own services for the platform, published [here](https://github.com/NaLamKI/SDK). The documentation for the SDK is continously improved and extended. 
 
 We also include example services that are published in a tutorial-style format to help users get familiar with developing software services for the NaLamKI platform. These [step-by-step examples](./getting-started/starterkit.md) will guide users through the process of creating agricultural applications, such as crop monitoring, soil analysis, or irrigation management tools. By following these tutorials, users can learn best practices for integrating AI models, utilizing sensor data, and deploying cloud-based services tailored to agriculture. At this time an example service that processes an image, detects its green values and publishes its geographical data serves as such a tutorial. We are working on publishing a fruit detection service as tutorial by autumn 2024.
 
@@ -21,6 +21,12 @@ The NaLamKI project aims to make agricultural processes more efficient and susta
 ## Use of NaLamKI for Agriculture
 
 NaLamKI will significantly simplify and speed up the monitoring of crops on large agricultural areas. Remote data collection, such as through drones or satellites, combined with AI-driven models for weather and crop development forecasts, provides extensive insights into the condition of cultivation areas that were previously scarcely available. Farmers will be able to detect and locate issues such as irrigation and fertilization deficiencies or pest infestations early on. This not only accelerates processes significantly but also allows for a much more targeted use of pesticides or fertilizers, leading to substantial cost savings, reduced environmental impact, and improved climate resilience.
+
+## NaLamKI SDK Overview
+The NaLamKI SDK is designed to simplify the integration of artificial intelligence models into agricultural applications within the NaLamKI framework. It equips developers with the necessary tools to embed their models into Python scripts using provided templates, ensuring a seamless and efficient implementation process. The SDK supports running services in separate Docker containers, creating a flexible, independent, and scalable environment for model execution while facilitating robust interaction with the NaLamKI platform.
+
+### Target Audience
+The SDK is primarily targeted at AI developers, researchers, and agricultural technology companies looking to leverage advanced AI solutions in their operations.
 
 ## Getting Started
 
