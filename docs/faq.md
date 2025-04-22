@@ -77,3 +77,23 @@ You can verify service registration by:
 - **Checking the Service Catalog**: Ensure that your service appears with the correct UUID and message queues.
 - **Testing Authentication**: Attempt to authenticate with the message queue using the provided JWT/certificate.
 - **Monitoring Logs**: Look for successful registration messages and absence of authentication errors in your service logs.
+
+### What should I do if Docker build partition has not enough space?
+If you encounter space issues with Docker, you can resolve this by:
+
+**Docker Desktop (Windows/macOS)**:
+1. Open Docker Desktop
+2. Go to Settings (top left)
+3. Navigate to "Disk image location"
+4. Change the location to a drive with more space
+
+**Ubuntu/Linux**:
+1. Stop the Docker daemon
+2. Move the Docker root directory to a location with more space
+3. Update the Docker daemon configuration
+4. Restart the Docker daemon
+
+For detailed instructions on changing the Docker installation directory on Linux, refer to the [Docker forums](https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169).
+
+### What is the ITU?
+The International Telecommunication Union (ITU) is a specialized agency of the United Nations that is responsible for issues related to information and communication technologies (ICTs). It plays a crucial role in the development and coordination of global telecommunication networks and services.

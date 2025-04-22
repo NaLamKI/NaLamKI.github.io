@@ -12,26 +12,26 @@ This section guides you through the typical workflow of a farmer using an AI ser
 ### 1. Setting Up the Foundation: Field and Data Management
 
 - Action: The farmer begins by ensuring their farm and field data are accurately represented within the platform. This includes defining field boundaries, crop types, and other relevant information.
-![Field and Data Management](./img/field_data_management.png).
+![Field and Data Management](img/field_data_management.png).
     >Field Management interface, showing the farmer defining field boundaries and inputting crop information.
 - Action: The farmer proceeds to upload relevant sensor data or integrate data from connected devices. This could include soil moisture, weather, or other environmental data.
-    ![Data Upload](./img/data_upload.png)
+    ![Data Upload](img/data_upload.png)
     >Data Upload interface, showing the farmer selecting and uploading files.
 
 ### 2. Applying AI Services to Field Data
 
 - Action: The farmer selects the specific field and data sets they want to analyze using the chosen AI service.
-    ![AI Service Selection](./img/ai_service_selection.png)
+    ![AI Service Selection](img/ai_service_selection.png)
     >AI Service Selection interface, showing the farmer choosing the field and data sets for analysis.
 - Action: The farmer initiates the AI service processing. The platform then transmits the selected data to the AI service for analysis.
 - Action: The farmer may receive progress updates or notifications during the processing phase.
-    ![Processing Updates](./img/processing_updates.png)
+    ![Processing Updates](img/processing_updates.png)
     >Processing Updates interface, showing the farmer receiving notifications about the AI service's progress.
 
 ### 3. Analyzing and Interpreting Results
 
 - Once the AI service has completed its analysis, the farmer accesses the results through the platform's dashboard. This may include visualizations such as graphs, charts, or maps.
-    ![Results Visualization](./img/results_visualization.png)
+    ![Results Visualization](img/results_visualization.png)
     >Results Visualization, showcasing the output of the AI service. Additional examples can b e found in [Results Monitor](./results_monitor.md).
 - The farmer carefully examines the results, paying attention to key insights and trends.
 

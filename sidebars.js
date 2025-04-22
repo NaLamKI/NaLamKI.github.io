@@ -7,50 +7,68 @@ const sidebars = {
 
   tutorialSidebar: [
     'intro',
+    'itu-reference',
+    {
+      type: 'category',
+      label: 'User Perspective',
+      link: { type: 'doc', id: 'user-perspective/overview' },
+      items: [
+        'user-perspective/overview',
+        'user-perspective/farmers_workflow',
+        'user-perspective/results_monitor',
+      ],
+    },
     {
       type: 'category',
       label: 'Getting Started',
-      link: { type: 'doc', id: 'getting-started/starterkit' }, // Set starterkit as the main page
+      link: { type: 'doc', id: 'getting-started/overview' },
       items: [
+        'getting-started/overview',
         'getting-started/starterkit',
-        'getting-started/data-structures',
-        'getting-started/own-service',
       ],
     },
     {
       type: 'category',
       label: 'Architecture',
-      link: { type: 'doc', id: 'architecture/overview' }, // Set overview as the main page
+      link: { type: 'doc', id: 'architecture/overview' },
       items: [
-        'architecture/overview', 
-        'architecture/farmer_workflow', 
-        'architecture/results_monitor',
-        'architecture/dataflow', 
-        'architecture/semantics'
-        ],
-    },
-    {
-      type: 'category',
-      label: 'SDK',
-      link: { type: 'doc', id: 'sdk/overview' }, // Set overview as the main page
-      items: [
-        'sdk/overview',
-        'sdk/nalamki-service',
-        'sdk/using-the-starterkit',
-        'sdk/dashboard-blueprint',
-        'sdk/data-model',
+        'architecture/overview',
+        'architecture/dataflow',
+        {
+          type: 'category',
+          label: 'SDK',
+          link: { type: 'doc', id: 'architecture/sdk/overview' },
+          items: [
+            'architecture/sdk/overview',
+          ],
+        },
       ],
     },
     {
       type: 'category',
-      label: 'Deployment',
-      link: { type: 'doc', id: 'deployment/overview' }, // Set overview as the main page
+      label: 'Development',
+      link: { type: 'doc', id: 'development/overview' },
       items: [
-        'deployment/overview',
-        'deployment/docker',
-        'deployment/kubernetes',
-        'deployment/edge'
-        ],
+        'development/overview',
+        'development/building-with-starterkit',
+        'development/data-structures-visualization',
+        {
+          type: 'category',
+          label: 'Configuration',
+          items: [
+            'development/configuration/dashboard-blueprint',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Deployment',
+          link: { type: 'doc', id: 'development/deployment/overview' },
+          items: [
+            'development/deployment/overview',
+            'development/deployment/edge',
+          ],
+        },
+      ],
     },
     'faq'
   ],
