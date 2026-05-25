@@ -1,0 +1,99 @@
+/* ============================================================
+   AgriFoodData site footer — shared between the home page and
+   the Docusaurus theme (swizzled via src/theme/Footer/index.js).
+   ============================================================ */
+
+.afd-sitefoot {
+  background: var(--afd-deepteal);
+  color: rgba(255, 255, 255, 0.78);
+  padding: 64px 0 28px;
+  font-family: var(--font-body);
+}
+
+.afd-sitefoot a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  border-bottom: none;
+}
+.afd-sitefoot a:hover {
+  color: var(--afd-lime);
+  text-decoration: none;
+}
+
+.afd-sitefoot .inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 56px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 56px;
+}
+
+.afd-sitefoot h6 {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--afd-mint);
+  margin: 0 0 14px;
+}
+
+.afd-sitefoot ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.afd-sitefoot ul li {
+  margin-bottom: 8px;
+}
+.afd-sitefoot ul li a {
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.afd-sitefoot .brand p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin: 14px 0 0;
+  max-width: 280px;
+}
+.afd-sitefoot .brand img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.afd-sitefoot .bottom {
+  max-width: 1440px;
+  margin: 40px auto 0;
+  padding: 18px 56px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  gap: 24px;
+}
+.afd-sitefoot .bottom .mid {
+  display: flex;
+  gap: 16px;
+}
+.afd-sitefoot .bottom a {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Narrow viewports */
+@media (max-width: 996px) {
+  .afd-sitefoot .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .afd-sitefoot .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

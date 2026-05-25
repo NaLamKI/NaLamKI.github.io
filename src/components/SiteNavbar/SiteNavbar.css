@@ -1,0 +1,282 @@
+/* ============================================================
+   AgriFoodData site navbar — shared between the home page and
+   the Docusaurus theme (swizzled via src/theme/Navbar/index.js).
+   ============================================================ */
+
+/* `.navbar` is kept on the root for Docusaurus internals (TOC highlight,
+   etc.) — override Infima defaults so the layout still matches the home
+   design. */
+.navbar.afd-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid var(--afd-line);
+  box-shadow: none;
+  height: 64px;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  font-family: var(--font-body);
+}
+[data-theme='dark'] .navbar.afd-navbar {
+  background: rgba(7, 51, 42, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.afd-navbar-inner {
+  flex: 1;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 56px;
+  gap: 28px;
+}
+
+/* ---------- Brand ---------- */
+.afd-navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+}
+.afd-navbar-brand:hover {
+  text-decoration: none;
+}
+.afd-navbar-logo {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+.afd-navbar-logo--dark { display: none; }
+[data-theme='dark'] .afd-navbar-logo--light { display: none; }
+[data-theme='dark'] .afd-navbar-logo--dark  { display: block; }
+
+.afd-navbar-brand-divider {
+  width: 1px;
+  height: 22px;
+  background: var(--afd-line);
+}
+[data-theme='dark'] .afd-navbar-brand-divider {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.afd-navbar-brand-tag {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--afd-ink);
+}
+[data-theme='dark'] .afd-navbar-brand-tag {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* ---------- Desktop links ---------- */
+.afd-navbar-links {
+  display: flex;
+  gap: 4px;
+}
+
+.afd-navbar-link {
+  color: var(--afd-ink);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color 120ms ease-out, background 120ms ease-out, box-shadow 120ms ease-out;
+}
+.afd-navbar-link:hover {
+  color: var(--afd-deepteal);
+  text-decoration: none;
+}
+[data-theme='dark'] .afd-navbar-link {
+  color: rgba(255, 255, 255, 0.78);
+}
+[data-theme='dark'] .afd-navbar-link:hover {
+  color: var(--afd-lime);
+}
+
+.afd-navbar-link--active {
+  color: var(--afd-deepteal);
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--afd-deepteal);
+  border-radius: 0;
+}
+[data-theme='dark'] .afd-navbar-link--active {
+  color: var(--afd-lime);
+  box-shadow: inset 0 -2px 0 var(--afd-lime);
+}
+
+/* ---------- Right side ---------- */
+.afd-navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.afd-navbar-github {
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  color: var(--afd-ink-2);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color 120ms ease-out, background 120ms ease-out;
+}
+.afd-navbar-github svg {
+  width: 20px;
+  height: 20px;
+}
+.afd-navbar-github:hover {
+  color: var(--afd-deepteal);
+  background: var(--afd-surface);
+  text-decoration: none;
+}
+[data-theme='dark'] .afd-navbar-github {
+  color: rgba(255, 255, 255, 0.7);
+}
+[data-theme='dark'] .afd-navbar-github:hover {
+  color: var(--afd-lime);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Mobile hamburger button — hidden on desktop */
+.afd-navbar-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--afd-ink);
+  border-radius: 4px;
+}
+.afd-navbar-toggle:hover {
+  background: var(--afd-surface);
+}
+[data-theme='dark'] .afd-navbar-toggle {
+  color: rgba(255, 255, 255, 0.86);
+}
+[data-theme='dark'] .afd-navbar-toggle:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* ---------- Mobile drawer ----------
+   The drawer is a sibling of the <nav> element (not a child) — otherwise
+   the navbar's `backdrop-filter` would create a containing block and trap
+   the drawer inside the navbar box. */
+.afd-navbar-mobile {
+  position: fixed;
+  top: 64px;
+  left: 0; right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #fff;
+  border-top: 1px solid var(--afd-line);
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 180ms ease-out, transform 180ms ease-out, visibility 0s linear 180ms;
+  overflow-y: auto;
+  display: none;
+}
+[data-theme='dark'] .afd-navbar-mobile {
+  background: #07332a;
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Render the drawer only on mobile widths */
+@media (max-width: 996px) {
+  .afd-navbar-mobile {
+    display: block;
+  }
+}
+
+.afd-navbar-mobile--open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+  transition: opacity 180ms ease-out, transform 180ms ease-out, visibility 0s linear 0s;
+}
+
+.afd-navbar-mobile-links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px 32px;
+  gap: 4px;
+  font-family: var(--font-display);
+}
+.afd-navbar-mobile-link {
+  display: block;
+  padding: 14px 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--afd-ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--afd-line);
+  border-left: 3px solid transparent;
+}
+.afd-navbar-mobile-link:hover,
+.afd-navbar-mobile-link:focus {
+  color: var(--afd-deepteal);
+  background: var(--afd-surface);
+  text-decoration: none;
+}
+.afd-navbar-mobile-link--active {
+  color: var(--afd-deepteal);
+  font-weight: 700;
+  border-left-color: var(--afd-lime);
+}
+[data-theme='dark'] .afd-navbar-mobile-link {
+  color: rgba(255, 255, 255, 0.86);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+[data-theme='dark'] .afd-navbar-mobile-link:hover {
+  color: var(--afd-lime);
+  background: rgba(255, 255, 255, 0.04);
+}
+[data-theme='dark'] .afd-navbar-mobile-link--active {
+  color: var(--afd-lime);
+}
+
+/* ---------- Breakpoints ---------- */
+@media (max-width: 996px) {
+  .afd-navbar-inner {
+    padding: 0 20px;
+    gap: 14px;
+  }
+  .afd-navbar-brand-divider,
+  .afd-navbar-brand-tag {
+    display: none;
+  }
+  .afd-navbar-logo {
+    height: 26px;
+  }
+  .afd-navbar-links {
+    display: none;
+  }
+  .afd-navbar-toggle {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .afd-navbar-inner {
+    padding: 0 16px;
+  }
+  .afd-navbar-github {
+    display: none; /* available inside the mobile menu instead */
+  }
+}

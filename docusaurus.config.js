@@ -8,10 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'NalamKI Docs',
-  tagline: 'NaLamKI Documentation',
-  //favicon: 'img/favicon.ico',
-  favicon: 'img/Logo_NaLamKi.ico',
+  title: 'AgriFoodData Docs',
+  tagline: 'An open data infrastructure for digital agriculture',
+  favicon: 'img/agrifooddata/bildmarke-light.png',
 
   // Set the production url of your site here
   url: 'https://nalamki.github.io',
@@ -74,73 +73,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/Logo_NaLamKi_text.png',
-      navbar: {
-        title: 'NaLamKI',
-        logo: {
-          alt: 'NaLamKI Logo',
-          src: 'img/Logo_NaLamKi.png',
-        },
-        items: [
-          // {
-          //   type: 'localeDropdown',
-          //   position: 'right',
-          // }, 
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          //{to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/NaLamKI/nalamki.github.io',
-            label: 'GitHub Repo',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'light',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'SDK',
-                to: 'https://github.com/NaLamKI/SDK',
-              },
-              {
-                label: 'Starter Kit',
-                href: 'https://github.com/NaLamKI/Starterkit',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'NaLamKI',
-                href: 'https://nalamki.de/',
-              },
-            ],
-          },
-        ],
-        copyright: `NaLamKI Documentation Built with Docusaurus.`,
-      },
+      // Social card
+      image: 'img/agrifooddata/logo-black.png',
+      // Navbar and footer are rendered by swizzled theme components
+      // (src/theme/Navbar/, src/theme/Footer/) which delegate to
+      // src/components/SiteNavbar/ and src/components/SiteFooter/.
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        darkTheme: prismThemes.nightOwl,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        respectPrefersColorScheme: true,
       },
     }),
 };

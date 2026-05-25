@@ -1,30 +1,474 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* ============================================================
+   AgriFoodData — Docusaurus theme
+   Matches the visual language of src/pages/Home.css.
+   Tokens defined here as globals so the Docusaurus pages and the
+   custom Home page share the same palette.
+   ============================================================ */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+@font-face {
+  font-family: "Funnel Display";
+  src: url("/fonts/FunnelDisplay.ttf") format("truetype-variations"),
+       url("/fonts/FunnelDisplay.ttf") format("truetype");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope.ttf") format("truetype-variations"),
+       url("/fonts/Manrope.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---- AgriFoodData brand palette ---- */
+  --afd-deepteal:  #0A4034;
+  --afd-slate:     #454F5B;
+  --afd-lime:      #DCFF82;
+  --afd-mint:      #6BD9C1;
+  --afd-olive:     #75A200;
+  --afd-teal:      #297C6A;
+  --afd-pale-lime: #EFFFC5;
+  --afd-cyan:      #00B8D9;
+  --afd-ink:       #454F5B;
+  --afd-ink-2:     #5a6470;
+  --afd-ink-3:     #8a929b;
+  --afd-line:      #dde1e6;
+  --afd-surface:   #f6f8f3;
+
+  /* ---- Type ---- */
+  --font-display: "Funnel Display", "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body:    "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ---- Infima overrides (light mode) ---- */
+  --ifm-color-primary:           var(--afd-teal);
+  --ifm-color-primary-dark:      #246c5c;
+  --ifm-color-primary-darker:    #1f6354;
+  --ifm-color-primary-darkest:   var(--afd-deepteal);
+  --ifm-color-primary-light:     #2e8975;
+  --ifm-color-primary-lighter:   #339181;
+  --ifm-color-primary-lightest:  #4ba999;
+
+  --ifm-background-color:        #ffffff;
+  --ifm-background-surface-color: var(--afd-surface);
+  --ifm-color-content:           var(--afd-ink);
+  --ifm-color-content-secondary: var(--afd-ink-2);
+  --ifm-color-emphasis-100:      #f3f5ef;
+  --ifm-color-emphasis-200:      var(--afd-surface);
+  --ifm-color-emphasis-300:      var(--afd-line);
+  --ifm-color-emphasis-700:      var(--afd-ink-2);
+  --ifm-color-emphasis-900:      var(--afd-ink);
+  --ifm-toc-border-color:        var(--afd-line);
+
+  --ifm-font-family-base:        var(--font-body);
+  --ifm-heading-font-family:     var(--font-display);
+  --ifm-font-family-monospace:   var(--font-mono);
+  --ifm-heading-font-weight:     800;
+  --ifm-heading-color:           var(--afd-ink);
+  --ifm-h1-font-size:            2.25rem;
+  --ifm-h2-font-size:            1.625rem;
+  --ifm-h3-font-size:            1.25rem;
+  --ifm-h4-font-size:            1.05rem;
+  --ifm-heading-line-height:     1.18;
+
+  --ifm-link-color:              var(--afd-teal);
+  --ifm-link-hover-color:        var(--afd-deepteal);
+  --ifm-link-decoration:         none;
+  --ifm-link-hover-decoration:   underline;
+
+  --ifm-code-font-size:          90%;
+  --ifm-code-background:         var(--afd-pale-lime);
+  --ifm-code-color:              var(--afd-deepteal);
+  --ifm-code-border-radius:      4px;
+  --docusaurus-highlighted-code-line-bg: rgba(10, 64, 52, 0.10);
+
+  --ifm-navbar-background-color: rgba(255,255,255,0.92);
+  --ifm-navbar-shadow:           none;
+  --ifm-navbar-height:           64px;
+
+  --ifm-footer-background-color: var(--afd-deepteal);
+  --ifm-footer-color:            rgba(255,255,255,0.78);
+  --ifm-footer-link-color:       rgba(255,255,255,0.7);
+  --ifm-footer-link-hover-color: var(--afd-lime);
+  --ifm-footer-title-color:      var(--afd-mint);
+
+  --ifm-button-border-radius:    0;
+
+  --ifm-menu-color-active:       var(--afd-deepteal);
+  --ifm-menu-color-background-active: rgba(220,255,130,0.22);
+  --ifm-menu-color-background-hover:  rgba(41,124,106,0.06);
+
+  font-feature-settings: "ss01","ss02";
+}
+
+/* ============================================================
+   Dark mode — deep-teal surfaces with mint/lime accents.
+   ============================================================ */
+
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary:           var(--afd-mint);
+  --ifm-color-primary-dark:      #4cc9ad;
+  --ifm-color-primary-darker:    #41bea2;
+  --ifm-color-primary-darkest:   #2c8f78;
+  --ifm-color-primary-light:     #87e2cc;
+  --ifm-color-primary-lighter:   #97e7d3;
+  --ifm-color-primary-lightest:  #b7eddf;
+
+  --ifm-background-color:        #07332a;
+  --ifm-background-surface-color: #0a4034;
+  --ifm-color-content:           rgba(255,255,255,0.86);
+  --ifm-color-content-secondary: rgba(255,255,255,0.62);
+  --ifm-color-emphasis-100:      #0a4034;
+  --ifm-color-emphasis-200:      #0c4a3d;
+  --ifm-color-emphasis-300:      rgba(255,255,255,0.12);
+  --ifm-color-emphasis-700:      rgba(255,255,255,0.72);
+  --ifm-color-emphasis-900:      rgba(255,255,255,0.92);
+  --ifm-toc-border-color:        rgba(255,255,255,0.12);
+  --ifm-heading-color:           #ffffff;
+
+  --ifm-link-color:              var(--afd-mint);
+  --ifm-link-hover-color:        var(--afd-lime);
+
+  --ifm-code-background:         rgba(220,255,130,0.10);
+  --ifm-code-color:              var(--afd-lime);
+  --docusaurus-highlighted-code-line-bg: rgba(220, 255, 130, 0.10);
+
+  --ifm-navbar-background-color: rgba(7,51,42,0.92);
+  --ifm-footer-background-color: #052520;
+
+  --ifm-menu-color-active:       var(--afd-lime);
+  --ifm-menu-color-background-active: rgba(220,255,130,0.12);
+  --ifm-menu-color-background-hover:  rgba(107,217,193,0.08);
+}
+
+/* ============================================================
+   Base typography
+   ============================================================ */
+
+html, body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+.markdown h1:first-child {
+  font-size: 2.25rem;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown > p,
+.markdown > ul,
+.markdown > ol {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.markdown a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 120ms ease-out, color 120ms ease-out;
+}
+.markdown a:hover {
+  text-decoration: none;
+  border-bottom-color: currentColor;
+}
+
+/* Inline code — pale-lime tab with mono font */
+.markdown code {
+  font-family: var(--font-mono);
+  padding: 1px 6px;
+  border: 1px solid rgba(41,124,106,0.18);
+}
+[data-theme='dark'] .markdown code {
+  border-color: rgba(220,255,130,0.20);
+}
+
+/* Code blocks — tighter radius, subtle border */
+div[class*="codeBlockContainer"] {
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: none;
+}
+
+/* Navbar is rendered by src/components/SiteNavbar/ — see
+   src/components/SiteNavbar/SiteNavbar.css. */
+
+/* ============================================================
+   Sidebar (docs menu)
+   ============================================================ */
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.menu {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  padding: 1rem 0.75rem;
+}
+
+.menu__list-item-collapsible,
+.menu__link {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.menu__link {
+  padding: 6px 10px;
+  border-left: 3px solid transparent;
+  transition: background 120ms ease-out, color 120ms ease-out, border-color 120ms ease-out;
+}
+
+.menu__link:hover {
+  background: var(--ifm-menu-color-background-hover);
+}
+
+.menu__link--active,
+.menu__link--active:hover {
+  color: var(--afd-deepteal);
+  font-weight: 700;
+  background: var(--ifm-menu-color-background-active);
+  border-left-color: var(--afd-lime);
+  border-radius: 0 4px 4px 0;
+}
+[data-theme='dark'] .menu__link--active,
+[data-theme='dark'] .menu__link--active:hover {
+  color: var(--afd-lime);
+  border-left-color: var(--afd-mint);
+}
+
+.menu__list-item-collapsible--active > .menu__link {
+  color: var(--afd-deepteal);
+  font-weight: 700;
+}
+[data-theme='dark'] .menu__list-item-collapsible--active > .menu__link {
+  color: var(--afd-lime);
+}
+
+/* ============================================================
+   Table of contents (right rail)
+   ============================================================ */
+
+.table-of-contents {
+  font-size: 0.82rem;
+  font-family: var(--font-body);
+  border-left: 1px solid var(--ifm-color-emphasis-300);
+  padding-left: 0.75rem;
+}
+
+.table-of-contents__link {
+  color: var(--afd-ink-2);
+  border-bottom: none;
+}
+.table-of-contents__link--active {
+  color: var(--afd-deepteal);
+  font-weight: 700;
+}
+[data-theme='dark'] .table-of-contents__link--active {
+  color: var(--afd-lime);
+}
+
+/* ============================================================
+   Pagination, breadcrumbs, admonitions, tables
+   ============================================================ */
+
+.pagination-nav__link {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  transition: border-color 120ms ease-out;
+}
+.pagination-nav__link:hover {
+  border-color: var(--afd-deepteal);
+}
+.pagination-nav__sublabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--afd-teal);
+}
+[data-theme='dark'] .pagination-nav__sublabel {
+  color: var(--afd-mint);
+}
+.pagination-nav__label {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: var(--afd-pale-lime);
+  color: var(--afd-deepteal);
+}
+[data-theme='dark'] .breadcrumbs__item--active .breadcrumbs__link {
+  background: rgba(220,255,130,0.12);
+  color: var(--afd-lime);
+}
+
+.admonition,
+.theme-admonition {
+  border-radius: 0;
+  border-left-width: 3px;
+}
+
+.alert--note,
+.theme-admonition-note {
+  --ifm-alert-background-color: rgba(41,124,106,0.06);
+  --ifm-alert-foreground-color: var(--afd-ink);
+  border-left-color: var(--afd-teal);
+}
+.alert--tip,
+.theme-admonition-tip {
+  --ifm-alert-background-color: var(--afd-pale-lime);
+  --ifm-alert-foreground-color: var(--afd-deepteal);
+  border-left-color: var(--afd-olive);
+}
+.alert--info,
+.theme-admonition-info {
+  --ifm-alert-background-color: rgba(0,184,217,0.08);
+  border-left-color: var(--afd-cyan);
+}
+.alert--warning,
+.theme-admonition-warning {
+  --ifm-alert-background-color: rgba(247,184,75,0.10);
+  border-left-color: #e89c1d;
+}
+.alert--danger,
+.theme-admonition-danger {
+  --ifm-alert-background-color: rgba(220,53,69,0.08);
+  border-left-color: #c0392b;
+}
+
+table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table thead tr {
+  background: transparent;
+  border-bottom: 2px solid var(--afd-ink);
+}
+table thead th {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--afd-ink);
+  text-align: left;
+  padding: 8px 10px;
+}
+table tbody td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+table tbody td code {
+  font-size: 0.85em;
+}
+table tbody tr:nth-child(even) {
+  background: transparent;
+}
+[data-theme='dark'] table thead tr {
+  border-bottom-color: rgba(255,255,255,0.32);
+}
+[data-theme='dark'] table thead th {
+  color: rgba(255,255,255,0.86);
+}
+
+/* ============================================================
+   Buttons (Infima)
+   ============================================================ */
+
+.button {
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  border: 1px solid transparent;
+  transition: transform 120ms ease-out, background 120ms ease-out, border-color 120ms ease-out;
+}
+.button:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.button--primary {
+  background: var(--afd-lime);
+  color: var(--afd-deepteal);
+  border-color: var(--afd-lime);
+}
+.button--primary:hover {
+  background: #c8eb6e;
+  color: var(--afd-deepteal);
+}
+.button--secondary {
+  background: var(--afd-deepteal);
+  color: var(--afd-lime);
+  border-color: var(--afd-deepteal);
+}
+.button--secondary:hover {
+  background: #073529;
+  color: var(--afd-lime);
+}
+.button--outline {
+  background: transparent;
+  border-color: var(--ifm-color-emphasis-300);
+  color: var(--afd-ink);
+}
+[data-theme='dark'] .button--outline {
+  color: rgba(255,255,255,0.86);
+}
+
+/* Site footer is rendered by src/components/SiteFooter/ — see
+   src/components/SiteFooter/SiteFooter.css. */
+
+/* ============================================================
+   Blockquotes, hr, selection
+   ============================================================ */
+
+.theme-doc-markdown blockquote {
+  border-left: 3px solid var(--afd-olive);
+  background: var(--afd-pale-lime);
+  color: var(--afd-deepteal);
+  padding: 12px 18px;
+  border-radius: 0;
+}
+[data-theme='dark'] .theme-doc-markdown blockquote {
+  background: rgba(220,255,130,0.08);
+  color: rgba(255,255,255,0.86);
+  border-left-color: var(--afd-lime);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  margin: 2rem 0;
+}
+
+::selection {
+  background: var(--afd-lime);
+  color: var(--afd-deepteal);
 }
