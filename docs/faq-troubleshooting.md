@@ -90,7 +90,7 @@ the mapping inspectable. See [Build · Data Apps](./build/data-apps/overview.md)
 ## For Frontend Developers
 
 ### Which auth flow should the browser use?
-**PKCE** with Keycloak. Use short-lived access tokens and refresh in the
+**PKCE** with the platform's OpenID Connect identity provider. Use short-lived access tokens and refresh in the
 background. See [API Reference · IAM](./api-reference/iam.md).
 
 ### Should I use `/collections/...` or `/api/v2/collections/...`?

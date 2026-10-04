@@ -220,7 +220,7 @@ export default function Home() {
                     </Link>
                   </li>
                   <li>
-                    <Link to={useBaseUrl('/docs/concepts/data-model')}>
+                    <Link to={useBaseUrl('/docs/concepts/data-model/overview')}>
                       <span className="n">03 · DATA</span>
                       <span>
                         <strong>Data models</strong> — JSON-LD and Web of Things vocabularies.
@@ -363,7 +363,7 @@ export default function Home() {
               </p>
               <span className="read">Read reference →</span>
             </Link>
-            <Link to={useBaseUrl('/docs/concepts/data-model')} className="block">
+            <Link to={useBaseUrl('/docs/concepts/data-model/overview')} className="block">
               <div className="ord">
                 03 · DATA <span className="stage">CONSENTED</span>
               </div>

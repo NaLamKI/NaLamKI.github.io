@@ -25,7 +25,7 @@ John Deere sprayer can execute in-field.
 ## APIs used
 
 - [Spatio-Temporal API](../api-reference/spatio-temporal.md) — imagery in (Zarr layers), detections + application map out (features + raster layer)
-- [Farm API](../api-reference/farm.md) — field boundaries
-- [Activity API](../api-reference/activity.md) — the planned spraying activity, with the application map as an attachment on the record
+- [Digital Farm API](../api-reference/resources.md) — field boundaries
+- [Digital Farm API](../api-reference/resources.md) — the planned spraying task and activity, with the application map as a dataset (`Data`) and its file
 - [Integrations · John Deere](../api-reference/integrations.md) — pushing the application map
 - [Service Registry](../api-reference/service-registry.md) — the chain of two services

@@ -15,9 +15,10 @@ building AI services, data apps, sensor integrations, or frontend modules.
 ## Where to start
 
 - New here? → [Why AgriFoodData](./why/overview.md)
-- Want to ship code today? → [Quickstart](./quickstart/overview.md)
+- Want to ship code today? → [Getting started: sign in and call the digital farm API](./quickstart/getting-started.md)
 - Looking for an API endpoint? → [API Reference](./api-reference/overview.md)
-- Want to understand the model? → [Concepts](./concepts/overview.md)
+- Want to understand the model? → [Concepts](./concepts/overview.md) — [data model](./concepts/data-model/overview.md), [ontology](./concepts/ontology/overview.md), [identity & access](./concepts/iam.md)
+- Building an app for a platform? → [Application SDK](./sdk/overview.md)
 
 ## Choose your path
 

@@ -20,7 +20,7 @@ camera — onto the platform via the **OGC SensorThings API**.
 2. **Add Sensors.** Each Sensor declares its model and metadata.
 3. **Define Datastreams.** A Datastream binds a Sensor to an
    ObservedProperty and a unit of measurement. *Optional but recommended:*
-   link the Datastream to a Region in the Farm API so observations are
+   link the Datastream to a Region in the digital farm API so observations are
    spatially grounded.
 4. **Send Observations.**
    - **MQTT** for high-frequency streams.

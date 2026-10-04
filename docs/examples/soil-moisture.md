@@ -22,6 +22,6 @@ Use real-time soil moisture readings to recommend or automate irrigation.
 ## APIs used
 
 - Sensor Things API — observations
-- Activity API — recommended events
+- Digital Farm API — recommended events (tasks)
 - Service Registry — the decision-support service
-- Farm API — the region the probes monitor
+- Digital Farm API — the region the probes monitor

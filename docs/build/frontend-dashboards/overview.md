@@ -9,10 +9,10 @@ advisory console, a public-facing map.
 
 ## What you need
 
-- An OIDC client registered in IAM.
+- An OpenID Connect client registered with the platform — see [Signing in apps](../../concepts/iam/app-authentication.md).
 - A map library — **MapLibre GL JS**, **Leaflet**, or **OpenLayers**.
 - A familiarity with [Spatio-Temporal API](../../concepts/apis/spatio-temporal-api.md)
-  and [Farm API](../../concepts/apis/farm-api.md).
+  and the [digital farm API](../../concepts/apis/digital-farm-api.md).
 
 ## API building blocks
 
@@ -27,7 +27,7 @@ advisory console, a public-facing map.
 | A time-series chart over an area | [`/api/v2/collections/{id}/aggregate/time-series`](../../api-reference/spatio-temporal.md#aggregations) |
 | A summary statistic over an area | [`/api/v2/collections/{id}/aggregate/summary`](../../api-reference/spatio-temporal.md#aggregations) |
 | A STAC browser | [`GET /api/v2/stac/`](../../api-reference/spatio-temporal.md#stac-catalogue) |
-| An audit trail of operations | [Activity API](../../api-reference/activity.md) |
+| An audit trail of operations | [`/audit-logs` and `/activities` of the digital farm API](../../api-reference/resources.md) |
 
 ## Recommended client libraries
 
@@ -42,9 +42,12 @@ advisory console, a public-facing map.
 
 ## Auth in the browser
 
-Use **PKCE** flow with Keycloak. Tokens are short-lived; refresh in the
-background. The same Bearer token works against the main API, the OGC STA
-service, and the Spatio-Temporal service.
+Use the authorization code flow with **PKCE**, and keep tokens out of the
+browser where you can: a backend that holds the session and gives the browser
+only a cookie is the safest pattern (see
+[Signing in apps](../../concepts/iam/app-authentication.md#the-backend-for-frontend-pattern)).
+Tokens are short-lived; refresh them on the server. Each service says in its
+reference which audience its tokens must name.
 
 ## Reference implementation
 

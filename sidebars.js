@@ -24,21 +24,47 @@ const sidebars = {
       link: { type: 'doc', id: 'concepts/overview' },
       items: [
         'concepts/architecture-overview',
+        'concepts/digital-farm-twin',
         {
           type: 'category',
-          label: 'The four APIs',
+          label: 'The digital farm APIs',
           link: { type: 'doc', id: 'concepts/apis/overview' },
           items: [
-            'concepts/apis/farm-api',
+            'concepts/apis/digital-farm-api',
             'concepts/apis/sensor-things-api',
             'concepts/apis/spatio-temporal-api',
-            'concepts/apis/activity-api',
           ],
         },
-        'concepts/digital-farm-twin',
-        'concepts/data-model',
+        {
+          type: 'category',
+          label: 'Data Model',
+          link: { type: 'doc', id: 'concepts/data-model/overview' },
+          items: [
+            'concepts/data-model/entities',
+            'concepts/data-model/rules-and-states',
+            'concepts/data-model/representations',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Ontology',
+          link: { type: 'doc', id: 'concepts/ontology/overview' },
+          items: [
+            'concepts/ontology/concept-schemes',
+            'concepts/ontology/using-the-ontology',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Identity & Access',
+          link: { type: 'doc', id: 'concepts/iam' },
+          items: [
+            'concepts/iam/user-authentication',
+            'concepts/iam/app-authentication',
+            'concepts/iam/authorization',
+          ],
+        },
         'concepts/service-registry',
-        'concepts/iam',
         'concepts/data-sovereignty',
         'concepts/standards-interoperability',
       ],
@@ -49,9 +75,10 @@ const sidebars = {
       label: 'Quickstart',
       link: { type: 'doc', id: 'quickstart/overview' },
       items: [
+        'quickstart/getting-started',
+        'quickstart/fetch-data-rest',
         'quickstart/first-ai-service',
         'quickstart/push-sensor-reading',
-        'quickstart/fetch-data-rest',
       ],
     },
 
@@ -89,12 +116,32 @@ const sidebars = {
 
     {
       type: 'category',
+      label: 'Application SDK',
+      link: { type: 'doc', id: 'sdk/overview' },
+      items: [
+        'sdk/sign-in-and-session',
+        'sdk/calling-services',
+        'sdk/manifest',
+        'sdk/cli',
+        'sdk/app-store',
+        'sdk/testing',
+        'sdk/security',
+        'sdk/host-app-bridge',
+        'sdk/platform-contract',
+      ],
+    },
+
+    {
+      type: 'category',
       label: 'API Reference',
       link: { type: 'doc', id: 'api-reference/overview' },
       items: [
-        'api-reference/farm',
+        'api-reference/conventions',
+        'api-reference/resources',
+        'api-reference/synchronization',
+        'api-reference/errors',
+        'api-reference/geospatial-features',
         'api-reference/sensor-things',
-        'api-reference/activity',
         'api-reference/spatio-temporal',
         'api-reference/integrations',
         'api-reference/service-registry',

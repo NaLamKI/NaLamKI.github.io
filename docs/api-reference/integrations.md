@@ -51,8 +51,9 @@ updates existing twin records instead of creating duplicates.
 ```
 
 After step 5, the imported entities are queryable through the normal
-[Farm API](./farm.md) — they look like any other farm/field in the
-platform, with the John Deere identifiers retained as external IDs.
+[digital farm API](./overview.md) — they look like any other farm/field in the
+platform, with the John Deere identifiers retained as `externalId` and
+`externalProvider`.
 
 ## Related
 

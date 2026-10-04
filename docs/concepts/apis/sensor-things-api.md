@@ -25,7 +25,7 @@ STA-capable client can talk to it directly.
 | **Datastream** | A logical channel: sensor + observed property + unit + a series of observations |
 | **Observation** | A single timestamped measurement |
 | **Location** | The geographic position of a Thing |
-| **FeatureOfInterest** | What is being observed (often linked to a Field or Region from the Farm API) |
+| **FeatureOfInterest** | What is being observed (often linked to a Field or Region of the digital farm API) |
 
 ## Capabilities
 
@@ -35,7 +35,7 @@ STA-capable client can talk to it directly.
 - **Live data ingest** — high-frequency streams via **MQTT**; batch and manual
   updates via **REST**.
 - **OGC-STA queries** — filter, order, paging — for time-series analysis.
-- **Spatial context** — link a Datastream to a **Region** in the Farm API
+- **Spatial context** — link a Datastream to a **Region** in the digital farm API
   so every measurement is grounded on a real piece of land. The main API
   also exposes region-scoped helpers (`/v1/regions/{id}/sensors`,
   `…/datastreams`, `…/observations`) and **composite** endpoints that

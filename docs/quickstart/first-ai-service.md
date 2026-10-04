@@ -23,6 +23,13 @@ docker --version    # Docker version 20.10.x or higher
 
 ## 1. Install the AgriFoodData SDK
 
+:::note Which SDK?
+This is the SDK for **AI services** — workers that are commissioned through a
+queue and write results back. To build an **app** that signs people in and calls
+the digital farm API, use the [Application SDK](../sdk/overview.md) and the
+[Getting started](./getting-started.md) guide instead.
+:::
+
 ```bash
 pip install git+https://github.com/NaLamKI/SDK
 pip show nalamkisdk

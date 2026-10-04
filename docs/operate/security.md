@@ -6,10 +6,16 @@ sidebar_position: 5
 
 ## Identity
 
-- Keycloak with strict client policies — no implicit flow in production.
-- Short-lived access tokens (~5 min) with refresh-token rotation.
-- Service-to-service flows use `client_credentials` with mTLS where
+- An OpenID Connect identity provider with strict client policies: authorization
+  code flow with PKCE only — no implicit flow, no password grant, consent
+  required for apps, exact redirect-URI matching.
+- Short-lived access tokens (minutes) with refresh tokens; APIs verify them
+  locally and refuse tokens that do not name them (`aud`).
+- Apps reach services through **token exchange** (a token per service and
+  scope set); background work uses `client_credentials` with mTLS where
   available.
+- Apps are **registered and reviewed** before they get a client; see
+  [SDK · Publishing](../sdk/app-store.md).
 
 ## Transport
 

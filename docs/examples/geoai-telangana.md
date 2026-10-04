@@ -40,9 +40,9 @@ Three audiences, one digital farm twin:
   - Frontend reads layers via TileJSON: `GET /api/v2/collections/{id}/tiles/WebMercatorQuad/tilejson.json?layers=NDVI`.
   - State / mandal / field views all use the **aggregations** endpoints
     (`/aggregate/time-series`, `/aggregate/summary`) with per-region bboxes.
-- **[Activity API](../api-reference/activity.md)** — advisory delivery,
-  attached to fields and regions as typed Records.
-- **[Farm API](../api-reference/farm.md)** — region hierarchy: state →
+- **[Digital Farm API](../api-reference/resources.md)** — advisory delivery,
+  attached to fields and regions as activities and results.
+- **[Digital Farm API](../api-reference/resources.md)** — region hierarchy: state →
   district → mandal → field, modelled as nested Regions.
 
 ## Data flow

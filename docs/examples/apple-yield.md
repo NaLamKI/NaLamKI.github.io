@@ -25,7 +25,7 @@ tiles.
   imagery via STAC; output detections via
   `POST /api/v2/collections/{id}/items` and the `WebMercatorQuad-Vector`
   tileset
-- [Farm API](../api-reference/farm.md) — orchard / row / tree regions
+- [Digital Farm API](../api-reference/resources.md) — orchard / row / tree regions
 - [Service Registry](../api-reference/service-registry.md) — commissioning, results
 
 ## Pattern

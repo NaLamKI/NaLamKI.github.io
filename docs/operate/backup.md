@@ -8,10 +8,10 @@ sidebar_position: 6
 
 | Data | Cadence | Retention |
 |------|---------|-----------|
-| Postgres (Farm, Activity, IAM) | continuous (WAL) + nightly snapshot | 30 days hot, 1 year cold |
+| Relational store (farm records, audit log, access data) | continuous (WAL) + nightly snapshot | 30 days hot, 1 year cold |
 | Object store (rasters, AI outputs) | versioning enabled | per project policy |
 | Sensor observations (time-series store) | nightly snapshot | 30 days hot, 5 years cold |
-| Keycloak realm config | on change | indefinite |
+| Identity provider configuration (clients, scopes, keys) | on change | indefinite |
 | Audit log | continuous, append-only | regulatory minimum |
 
 ## Restore drill

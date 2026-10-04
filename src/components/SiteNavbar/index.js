@@ -42,7 +42,7 @@ const NAV_LINKS = [
   {
     label: 'Documentation',
     to: '/docs/welcome',
-    match: /^\/docs\/(welcome|why|quickstart|build|operate|faq)/,
+    match: /^\/docs\/(welcome|why|quickstart|build|sdk|operate|faq)/,
   },
   {
     label: 'API Reference',

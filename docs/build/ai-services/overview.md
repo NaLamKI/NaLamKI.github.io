@@ -48,7 +48,7 @@ specification.
 
 ## Reference implementations
 
-- [AgriFoodData SDK](https://github.com/NaLamKI/SDK)
+- [AgriFoodData SDK](https://github.com/NaLamKI/SDK) — for AI services. For apps that call the digital farm API, see the [Application SDK](../../sdk/overview.md)
 - [AgriFoodData Starter Kit](https://github.com/NaLamKI/Starterkit)
 - [Examples · Apple Yield Detection](../../examples/apple-yield.md)
 

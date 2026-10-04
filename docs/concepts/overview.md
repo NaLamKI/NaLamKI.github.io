@@ -12,19 +12,33 @@ case study.
 
 - [Architecture Overview](./architecture-overview.md) — the three pillars and the integration-layer diagram
 
-## The four APIs (concept pages)
+## The digital farm APIs (concept pages)
 
 - [APIs at a glance](./apis/overview.md)
-- [Farm API](./apis/farm-api.md)
+- [Digital Farm API](./apis/digital-farm-api.md) — the REST binding of the data model
 - [Sensor Things API](./apis/sensor-things-api.md)
 - [Spatio-Temporal API](./apis/spatio-temporal-api.md)
-- [Activity API](./apis/activity-api.md)
+
+## Data model and ontology
+
+- [Digital Farm Twin](./digital-farm-twin.md) — the canonical object
+- [Data Model](./data-model/overview.md) — 47 entities in 14 packages, conventions, JSON / JSON Schema / JSON-LD / SHACL
+  - [Packages & Entities](./data-model/entities.md)
+  - [Rules & State Models](./data-model/rules-and-states.md)
+  - [Representations](./data-model/representations.md)
+- [Ontology](./ontology/overview.md) — the shared vocabulary
+  - [Concept Schemes & Code Lists](./ontology/concept-schemes.md)
+  - [Using the Ontology](./ontology/using-the-ontology.md)
+
+## Identity and access
+
+- [Identity, Authentication & Access](./iam.md) — actors, standards, roles
+  - [Signing in People](./iam/user-authentication.md)
+  - [Signing in Apps](./iam/app-authentication.md)
+  - [Scopes, Audiences & Permissions](./iam/authorization.md)
+- [Data Sovereignty in Practice](./data-sovereignty.md)
 
 ## Cross-cutting
 
-- [Digital Farm Twin](./digital-farm-twin.md) — the canonical object
-- [Data Model & Ontology](./data-model.md) — JSON-LD, AgroVoc, payloads
 - [Service Registry & Lifecycle](./service-registry.md)
-- [Identity, Roles & Permissions](./iam.md)
-- [Data Sovereignty in Practice](./data-sovereignty.md)
 - [Standards & Interoperability](./standards-interoperability.md)

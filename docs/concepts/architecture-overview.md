@@ -54,14 +54,13 @@ existing FMIS, sensor stacks or AI services; it gives them a common contract.
 | 05 | Service registry | Consented |
 | 06 | Data spaces (Gaia-X / IDSA) | Draft |
 
-## The four canonical APIs
+## The digital farm APIs
 
 | API | Role |
 |-----|------|
-| [Farm API](./apis/farm-api.md) | Master data — organisations, users, farms, fields, regions |
+| [Digital Farm API](./apis/digital-farm-api.md) | The REST binding of the data model — master data and operations: organisations, users, farms, fields, regions, cultivation, work, products, machines, animals, observations, economics, compliance, processing runs |
 | [Sensor Things API](./apis/sensor-things-api.md) | IoT sensor management & real-time observations |
 | [Spatio-Temporal API](./apis/spatio-temporal-api.md) | Maps, layers, rasters, vectors, AI outputs |
-| [Activity API](./apis/activity-api.md) | Planting, operations, inputs, outputs, economics |
 
 ## See it in action
 

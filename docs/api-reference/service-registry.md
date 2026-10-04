@@ -13,7 +13,7 @@ maintainers; a self-service REST surface is on the [Roadmap](../ecosystem/roadma
 2. You open a request via the [Submit Your Service](../ecosystem/submit-service.md) workflow.
 3. The maintainers provision a **UUID**, dedicated **RabbitMQ queues**, and a **JWT/certificate** bound to the service.
 4. The service consumes commissions from its queue and writes results back through the existing platform APIs:
-   - record / attachment payloads via the [Activity API](./activity.md)
+   - records via the [digital farm API](./resources.md) — a `ProcessingJob` for the run and the `Result` it produces
    - sensor outputs (e.g. inferred soil moisture) via the [Sensor Things API](./sensor-things.md)
 
 ## What the future API will expose

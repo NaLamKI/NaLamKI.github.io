@@ -147,7 +147,7 @@ region-scoped helpers without switching base URLs.
 | `GET` | `/v1/sensors/datastreams/{datastreamId}/observations` | Observations on a datastream |
 
 > Under the hood, the main API forwards these to the OGC STA service and
-> joins them with the region tree from the Farm API. There is **no separate
+> joins them with the region tree from the digital farm API. There is **no separate
 > data store**.
 
 ---

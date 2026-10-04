@@ -19,13 +19,13 @@ data model and to keep them in sync.
 
 - Read access to the external system (API key, OAuth client, etc.).
 - A target organisation in AgriFoodData.
-- Knowledge of [Farm](../../concepts/apis/farm-api.md) and
-  [Activity](../../concepts/apis/activity-api.md) APIs.
+- Knowledge of the [digital farm API](../../concepts/apis/digital-farm-api.md)
+  and the [data model](../../concepts/data-model/overview.md).
 
 ## Step-by-step (read path)
 
 1. **Map fields.** Match the external system's `field` / `parcel` /
-   `crop` notion to the Farm API's Field + AgroVoc tags.
+   `crop` notion to the data model's `Field` and the `typeUri` of its cultivation periods ([ontology](../../concepts/ontology/overview.md)).
 2. **Pull boundaries.** Translate geometries to GeoJSON (RFC 7946).
 3. **Sync activities.** For every operation in the external system, write
    an Activity (with timestamps, inputs, outputs).

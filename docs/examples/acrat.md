@@ -26,9 +26,9 @@ streams); outputs land back as Layers or Activities.
 ## APIs used
 
 - Service Registry — registration, commissioning, results
-- Farm API — region scoping
+- Digital Farm API — region scoping
 - Spatio-Temporal API — drone and AI outputs
-- Activity API — carbon and operational records
+- Digital Farm API — carbon and operational records
 
 ## Outcome
 
